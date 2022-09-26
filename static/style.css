@@ -114,3 +114,22 @@ input[type=checkbox] {
         opacity: 0;
     }
 }
+
+@media only screen and (min-width: 700px) {
+    #hamburger {
+        display: none;
+    }
+
+    #navlinks {
+        margin: 0;
+        padding: 0;
+        background: none;
+        position: relative;
+        flex-direction: row;
+        animation: none;
+    }
+
+    #navlinks>li {
+        margin: 0 1.5rem;
+    }
+}
