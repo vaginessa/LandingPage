@@ -4,6 +4,7 @@ header {
     align-items: center;
     max-width: 70rem;
     margin: auto;
+    background: var(--bg);
     padding: 0 3rem;
 }
 
