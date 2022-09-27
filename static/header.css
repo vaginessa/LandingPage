@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
 }
 
 nav {
@@ -115,7 +115,24 @@ input[type=checkbox] {
         margin: 0 1.5rem;
     }
 
-    #navlinks a:hover {
-        box-shadow: 0px 5px 3px -3px var(--on-hover);
+    #navlinks a {
+        position: relative;
+    }
+
+    #navlinks a::before {
+        content: "";
+        display: block;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 100%;
+        background: linear-gradient(to right, var(--on-hover), var(--base));
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    #navlinks a:hover::before {
+        opacity: 1;
     }
 }
