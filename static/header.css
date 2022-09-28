@@ -55,8 +55,9 @@ input[type=checkbox] {
 #navlinks {
     display: flex;
     position: absolute;
-    margin-top: 3rem;
-    padding: 2rem;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    z-index: 100;
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 3rem);
