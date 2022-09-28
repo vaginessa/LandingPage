@@ -76,6 +76,10 @@ input[type=checkbox] {
     animation: fade-in 200ms ease-in-out forwards;
 }
 
+#navlinks a {
+    font-weight: 700;
+}
+
 @keyframes fade-in {
     from {
         visibility: hidden;
